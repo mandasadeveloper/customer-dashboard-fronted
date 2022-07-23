@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const Shop_name = "electronicbiz.myshopify.com";
   React.useEffect(() => {
-    fetch(`https://0e67-2401-4900-1c08-17d-de6-ac59-b190-dc2b.in.ngrok.io/api/get-customers?shop=electronicbiz.myshopify.com`).then((res)=>console.log(res));
+    fetch(`https://212d-2401-4900-1c08-17d-a9a8-581d-511f-6327.in.ngrok.io/api/get-customers?shop=electronicbiz.myshopify.com`).then((res)=>console.log(res));
   }, []);
 
   return (
