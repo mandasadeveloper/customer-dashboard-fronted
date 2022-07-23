@@ -3,16 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-  const [data, setData] = React.useState(null);
-
+  const Shop_name = "electronicbiz.myshopify.com";
   React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
+    fetch(`https://0e67-2401-4900-1c08-17d-de6-ac59-b190-dc2b.in.ngrok.io/api/get-customers?shop=electronicbiz.myshopify.com`).then((res)=>console.log(res));
   }, []);
-
-console.log(data);
 
   return (
     <div className="App">
